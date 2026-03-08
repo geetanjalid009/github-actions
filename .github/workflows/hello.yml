@@ -3,7 +3,8 @@ name: Hello workflow
 
 #runs on a Trigger
 on:
- workflow_dispatch: 
+ push:
+   brnaches:[main]
 
 # these are jobs inside the workflow
 jobs:
