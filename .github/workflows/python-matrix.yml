@@ -3,7 +3,7 @@ on:
     push:
         branches: [main]
 
-job:
+jobs:
     validate:
         runs-on: ubuntu-latest
         
@@ -12,7 +12,7 @@ job:
               uses: actions/checkout@v4
 
             - name: steup python 3.13
-              uses: action/setup-python@v5
+              uses: actions/setup-python@v5
               with:
                 python-version: "3.13"
 
